@@ -3,20 +3,57 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Source Sans Pro", sans-serif;
-	font-size: 17px;
+	font-size: 18px;
+	color: #191919;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+}
+
+.dark-mode-body {
+	background-color: #191919 !important;
 }
 
 h1 {
-	font-size: 4.5rem !important;
+	font-size: 6.5rem !important;
 	font-weight: 700 !important;
-	font-family:  "Lora", serif;
+	font-family:  "PT Serif", serif;
+	color: #080808 !important;
+	text-shadow: 3px 3px #747574;
 }
 
-@media only screen and (max-width: 672px) {
+h2 {
+	font-size: 3rem !important;
+	font-weight: 700 !important;
+	font-family:  "PT Serif", serif;
+	color: #080808 !important;
+}
 
-	h1 {
-		font-size: 3rem !important;
-	}
+h3 {
+	font-size: 2rem !important;
+	font-weight: 700 !important;
+}
+
+#hero {
+	padding-top: 8rem;
+	padding-bottom: 4rem;
+	min-height: 100vh;
+	background-color: #F8F5EF;
+
+}
+
+
+#nav-bar {
+	/*background-color: #1d3557 !important;*/
+	background-color: #f15025 !important;
 }
 
 #nav-logo {
@@ -26,17 +63,128 @@ h1 {
 #profile-photo {
 	width:  350px;
 	border-radius: 50%;
-	margin-top: 5rem;
 	margin-bottom:  2rem;
 }
 
-@media only screen and (max-width: 366px) {
+#projects, #tools, #contact {
+	padding-top: 4rem;
+}
+
+#projects-container, #contact-container, #tools-container {
+	min-height: 50vh;
+}
+
+#tools-container {
+	background-color: #F8F5EF;
+}
+
+#logos-container > a > img {
+	width: 130px;
+}
+#github-logo, #vscode-logo {
+	transform: scale(.70);
+}
+
+#projects-container > div > div > div > div > a > img:hover {
+	transform: scale(1.05);
+	transition: .2s;
+}
+
+.projects {
+	height: 100%;
+}
+
+#tools-container > div > a > img:hover {
+	transform: scale(1.1);
+	transition: .2s;
+}
+
+#github-logo:hover, #vscode-logo:hover {
+	transform: scale(.8) !important;
+}
+
+#gmap_canvas {
+	width: 100%;
+	height: 100%
+}
+
+.btn-custom {
+	background-color: rgb(131, 50, 223) !important;
+}
+
+.btn-custom:hover {
+	background-color: rgb(151, 70, 243) !important;
+}
+
+footer {
+	background-color: #dadcda;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 991px) {
+
+
+	#hero {
+		padding-top: 6rem;
+	}
+
+	#profile-photo {
+
+
+	}
+
+	h1 {
+		font-size: 4.5rem !important;
+		text-shadow: 2px 2px #747574;
+	}
+}
+@media only screen and (max-width: 768px) {
 
 	#profile-photo {
 		width:  300px;
 	}
 
+	h1 {
+		font-size: 3rem !important;
+		text-shadow: 1.5px 1.5px #747574;
+
+	}
+
+	#gmap_canvas {
+	height: 50vh
+	}
+
+	#projects-container, #contact-container, #tools-container {
+	min-height: 70vh;
+}
+
+}
+@media only screen and (max-width: 366px) {
+
+	
+	#profile-photo {
+		width:  200px;
+		margin-bottom: .5rem;
+	}
+
 	* {
 		font-size: 16px;
 	}
+
+	h3 {
+		font-size: 1rem;
+	}
+
+	#logos-container > a > img {
+		width: 80px;
+	}
+	#github-logo, #vscode-logo {
+		transform: scale(.70);
+	}
+
+	#projects-container, #contact-container, #tools-container {
+	min-height: 100vh;
+}
+
 }

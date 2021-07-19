@@ -3,8 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="./style.css">
+	
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,39 +30,177 @@
 <body>
 
 	<!-- NAV BAR -->
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-			<a class="navbar-brand" href="#"><img src="./images/gioBugtong.png" id="nav-logo"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navLinks">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#projects">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#tools">Tools</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+	<nav class="navbar navbar-expand-md navbar-light fixed-top" id="nav-bar">
+		<a class="navbar-brand" href="#"><img src="./images/gioBugtong.png" id="nav-logo"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navLinks">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#projects">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#tools">Tools</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://drive.google.com/file/d/1wGofOYOSMuOpHq1-OFA3FUwQFjiTC4SH/view?usp=sharing" target="_blank" >Resume</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-	<div class="container">
+	<!-- HERO -->
+
+	<div id="hero" class="container-fluid">
 		<img src="./images/pic.png" class="d-block mx-auto" id="profile-photo">
 		<h1 class="text-center">Gio Bugtong</h1>
 		<h3 class="text-center">Full-Stack Web Developer</h3>
-		<p class="text-justify">
-			Hello! My full name is Norman Luigi E. Bugtong. I am a full-stack web developer based in Manila, Philippines. I make responsive and functional web applications using HTML5, CSS3, JavaScript and its frameworks and libraries.
-		</p>
+		<div class="container">
+			<h5 class="text-justify" id="intro">
+				Hello! My full name is Norman Luigi E. Bugtong. I am a full-stack web developer based in Manila, Philippines. I make responsive and functional web applications using HTML5, CSS3, JavaScript and its frameworks and libraries.
+			</h5>
+		</div>
+	</div>
+
+
+	<div class="container-fluid" id="projects-container">
+		<!-- PROJECTS SECTION  -->
+		<div class="container">
+			<h2 class="text-center" id="projects">Projects</h2>
+			<div class="container-fluid mb-4">
+				<!-- FIRST ROW -->
+				<div class="row mt-4">
+					<div class=" d-flex col-md-6 order-md-1 order-2 flex-column" id="rps">
+						<h3 class="text-center">Rock Paper Scissors</h3>
+						<p class="text-justify">
+							Play the classic Rock Paper Scissors game with a computer in this simple web app made with HTML, CSS, and a bit of JavaScript.
+						</p>
+						<p class="text-justify">
+							This is a very small practice project I made while going through the Odin Project curriculum.
+						</p>
+						<a href="https://giodude23.github.io/rock-paper-scissors/" target="_blank"><button class="btn text-light btn-custom btn-block">Live Preview</button></a>
+					</div>
+
+					<div class="col-md-6 bg-light order-md-2 order-1 mb-sm-4 p-0">
+						<a href="https://giodude23.github.io/rock-paper-scissors/" target="_blank"><img src="./images/rps.png" alt="Screenshot of Rock Paper Scissors" class="img-fluid"></a>
+					</div>
+				</div>
+
+				<!-- SECOND ROW -->
+
+				<div class="row mt-4">
+					<div class="col-md-6 order-md-2 order-2 d-flex flex-column">
+						<h3 class="text-center">Etch-A-Sketch</h3>
+						<p class="text-justify">
+							Do you have a mouse, a bit of time to waste, and love colors? Check out this Etch-A-Sketch built using HTML, CSS, and JavaScript.
+						</p>
+						<p class="text-justify">
+							Another simple project I made following the Odin Project course.
+						</p>
+						<a href="https://giodude23.github.io/etch-a-sketch/" target="_blank" class="align-bottom"><button class="btn text-light btn-custom btn-block">Live Preview</button></a>
+					</div>
+
+					<div class="col-md-6 bg-light order-md-1 order-1 mb-sm-4 p-0">
+						<a href="https://giodude23.github.io/etch-a-sketch/" target="_blank"><img src="./images/etch.png" alt="Image of Front-End Web Developer" class="img-fluid"></a>
+					</div>
+				</div>
+
+				<!-- THIRD ROW -->
+
+				<div class="row mt-4">
+					<div class="col-md-6 order-md-1 order-2 d-flex flex-column">
+						<h3 class="text-center">JavaScript Calculator</h3>
+						<p class="text-justify">
+							This won't solve all your problems but it will do basic arithmetic. A simple Calculator built with JavaScript.
+						</p>
+						<p class="text-justify">
+							Yet another project in the last stretch of the Foundations course in the Odin Project.
+						</p>
+						<a href="https://giodude23.github.io/JavaScript-Calculator/" target="_blank"><button class="btn text-light btn-custom btn-block align-bottom">Live Preview</button></a>
+					</div>
+
+					<div class="col-md-6 bg-light order-md-2 order-1 mb-sm-4 p-0">
+						<a href="https://giodude23.github.io/JavaScript-Calculator/" target="_blank"><img src="./images/jscalc.png" alt="Image of Front-End Web Developer" class="img-fluid"></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
 
 	</div>
-	
+		<!-- TOOLS SECTION -->
+	<div class="container-fluid" id="tools-container">
+		<h2 class="mb-4 text-center" id="tools">Tools</h2>
+		<div class="d-flex flex-wrap justify-content-center" id="logos-container">
+			<a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><img src="./images/logo-html5.png"></a>
+			<a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><img src="./images/logo-css3.png"></a>
+			<a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="./images/logo-javascript.png"></a>
+			<a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank"><img src="./images/logo-bootstrap.png"></a>
+			<a href="https://en.wikipedia.org/wiki/Visual_Studio_Code" target="_blank"><img src="./images/logo-vscode.png" id="vscode-logo" class="align-self-center m-2"></a>
+			<a href="https://en.wikipedia.org/wiki/Sublime_Text" target="_blank"><img src="./images/logo-sublime-text-3.png"></a>
+			<a href="https://en.wikipedia.org/wiki/Git" target="_blank"><img src="./images/logo-git.png"></a>
+			<a href="https://en.wikipedia.org/wiki/GitHub" target="_blank"><img src="./images/logo-github.png" id="github-logo" class="align-self-center m-2"></a>
+			<a href="https://en.wikipedia.org/wiki/GitLab" target="_blank"><img src="./images/logo-gitlab-ci-cd.png"></a>
+		</div>
+	</div>
+
+		<!-- CONTACT SECTION -->
+		<div class="container mb-5" id="contact-container">
+			<h2 class="mb-4 text-center" id="contact">Contact</h2>
+			<div class="row">
+			<!-- GOOGLE MAPS -->
+				<div class="col-md-6 mb-4">
+					<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=sheraton&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				</div>
+
+			<!-- CONTACT FORM -->
+				<div class="col-md-6">
+					<h5 class="mb-3">Want to collaborate on a project? Leave your name and email address by filling up the form below.</h5>
+					<form>
+						<div class="form-group">
+							<label for="full-name" class="text-left">Full Name</label>
+							<input type="text" name="fullName" id="full-name" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label for="email" class="text-left">Email Address</label>
+							<input type="email" name="e-mail" id="email" class="form-control" placeholder="name@example.com" required>
+						</div>
+						<div class="form-group" class="text-left">
+							<label for="text-area">Message</label>
+							<textarea rows="3" class="form-control" name="textArea" id="text-area"></textarea>
+						</div>
+						<button class="btn btn-block text-light btn-custom" type="submit" id="btn-send">Send</button>
+					</form>
+				</div>
+
+			<!-- SOCIAL MEDIA LINKS -->
+				
+			</div>
+		</div>
+</div>
+
+</div>
+
+
+<footer class="pt-3 text-dark text-center">
+	<p class="m-0 pb-3">&copy; 2021 Gio Bugtong | All rights reserved.</p>
+
+	<div class="col-md-12 d-flex justify-content-center flex-wrap pb-3">
+		<a href="mailto: nlbugtong@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-2x mx-2"></i></a>
+		<a href="https://www.linkedin.com/in/giobugtong/" target="_blank"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
+		<a href="https://www.facebook.com/giobugtong" target="_blank"><i class="fab fa-facebook-square fa-2x mx-2"></i></a>
+		<a href="https://www.twitter.com/giobugtong" target="_blank"><i class="fab fa-twitter-square fa-2x mx-2"></i></a>
+		<a href="https://m.me/giobugtong" target="_blank"><i class="fab fa-facebook-messenger fa-2x mx-2"></i></a>
+		<a href="https://www.instagram.com/giobugtong" target="_blank"><i class="fab fa-instagram-square fa-2x mx-2"></i></a>
+	</div>
+</footer>
 
 <script src="script.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -54,13 +54,13 @@
 
 	<!-- HERO -->
 
-		<div id="hero-container" class="container-fluid mx-0 row font-weight-light">
-			<div id="hero" class="container text-center text-md-right col-12 align-self-center">
+		<div id="hero-container" class="container-fluid mx-0 row font-weight-light text-light">
+			<div id="hero" class="container text-center text-md-right col-12 align-self-end">
 				<p id="greeting"></p>
 				<h1 id="giobugtong"><span id="at-sign">@</span>giobugtong</h1>
-				<h3 class="font-weight-light">Full-Stack Web Developer</h3>
+				<h3 class="font-weight-light">full-stack web developer</h3>
 			</div>
-			<div id="scroll-down" class="text-center align-self-end"><a href="#projects">
+			<div id="scroll-down" class="text-center align-self-end col-12"><a href="#projects">
 				<div id="scroll-icon"><i class="fas fa-angle-double-down"></i></div>
 				scroll down to see my projects
 			</a>
@@ -68,7 +68,7 @@
 		</div>
 
 	<!-- PROJECTS SECTION  -->
-		<div class="container-fluid" id="projects-container">
+		<div class="container-fluid text-dark" id="projects-container">
 			<div class="container">
 				<h2 class="text-center mb-4" id="projects">Projects</h2>
 				<div class="container-fluid my-4">
@@ -76,10 +76,10 @@
 					<div class="row my-4">
 						<div class=" d-flex col-md-6 order-md-1 order-2 flex-column">
 							<h3 class="text-center">Rock Paper Scissors</h3>
-							<p class="text-justify">
+							<p>
 								Play the classic Rock Paper Scissors game with a computer in this simple web app made with HTML, CSS, and a bit of JavaScript.
 							</p>
-							<p class="text-justify">
+							<p>
 								This is a very small practice project I made while going through the Odin Project curriculum.
 							</p>
 							<a href="https://giobugtong.github.io/rock-paper-scissors/" target="_blank"><button class="btn text-light btn-custom btn-block mb-5 mt-md-5">Live Preview</button></a>
@@ -94,10 +94,10 @@
 					<div class="row my-4">
 						<div class="col-md-6 order-md-2 order-2 d-flex flex-column">
 							<h3 class="text-center">Etch-A-Sketch</h3>
-							<p class="text-justify">
+							<p>
 								Do you have a mouse, a bit of time to waste, and love colors? Check out this Etch-A-Sketch built using HTML, CSS, and JavaScript.
 							</p>
-							<p class="text-justify">
+							<p>
 								Another simple project I made following the Odin Project course.
 							</p>
 							<a href="https://giobugtong.github.io/etch-a-sketch/" target="_blank" class="align-bottom"><button class="btn text-light btn-custom btn-block mb-5 mt-md-5">Live Preview</button></a>
@@ -112,10 +112,10 @@
 					<div class="row my-4">
 						<div class="col-md-6 order-md-1 order-2 d-flex flex-column">
 							<h3 class="text-center">JavaScript Calculator</h3>
-							<p class="text-justify">
+							<p>
 								This won't solve all your problems but it will do basic arithmetic. A simple Calculator built with JavaScript.
 							</p>
-							<p class="text-justify">
+							<p>
 								Yet another project in the last stretch of the Foundations course in the Odin Project.
 							</p>
 							<a href="https://giobugtong.github.io/JavaScript-Calculator/" target="_blank"><button class="btn text-light btn-custom btn-block mb-5 mt-md-5">Live Preview</button></a>
@@ -129,7 +129,7 @@
 			</div>
 		</div>
 	<!-- TOOLS SECTION -->
-		<div class="container-fluid" id="tools-container">
+		<div class="container-fluid text-light" id="tools-container">
 			<h2 class="mb-4 text-center" id="tools">Tools</h2>
 			<div class="d-flex flex-wrap justify-content-center" id="logos-container">
 				<a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><img src="./images/logo-html5.png"></a>
@@ -145,25 +145,22 @@
 		</div>
 
 	<!-- CONTACT SECTION -->
-		<div class="container mb-5" id="contact-container">
-			<h2 class="mb-5 text-center" id="contact">Contact</h2>
+		<div class="container mb-4 mb-md-5" id="contact-container">
+			<h2 class="mb-3 mb-md-5 text-center" id="contact">Contact</h2>
 			<div class="row">
-			<!-- GOOGLE MAPS -->
-				<div class="col-md-6 mb-4">
-					<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=sheraton&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-				</div>
+				<p class="mx-3 mb-3 mb-md-4">If you think I can be a good fit for your team, leave your name and email address by filling up the form below, or contact me through my social links.</p>
 
-			<!-- CONTACT FORM -->
+				
+				<!-- CONTACT FORM -->
 				<div class="col-md-6">
-					<h5 class="mb-3">Want to collaborate on a project? Leave your name and email address by filling up the form below.</h5>
-					<form>
+					<form onsubmit="return contactSubmit()">
 						<div class="form-group">
 							<label for="full-name" class="text-left">Full Name</label>
 							<input type="text" name="fullName" id="full-name" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label for="email" class="text-left">Email Address</label>
-							<input type="email" name="e-mail" id="email" class="form-control" placeholder="name@example.com" required>
+							<input type="email" name="e-mail" id="email" class="form-control" required>
 						</div>
 						<div class="form-group" class="text-left">
 							<label for="text-area">Message</label>
@@ -172,20 +169,30 @@
 						<button class="btn btn-block text-light btn-custom" type="submit" id="btn-send">Send</button>
 					</form>
 				</div>
+
+				<div id="social-links" class="col-md-6 mt-5 text-center">
+					<p><a href="mailto: nlbugtong@gmail.com" target="_blank">Email</a></p>
+					<p><a href="https://www.linkedin.com/in/giobugtong/" target="_blank">LinkedIn</a></p>
+					<p><a href="https://www.github.com/giobugtong" target="_blank">GitHub</a></p>
+					<p><a href="https://www.facebook.com/giobugtong" target="_blank">Facebook</a></p>
+					<p><a href="https://www.twitter.com/giobugtong" target="_blank">Twitter</a></p>
+					<p><a href="https://m.me/giobugtong" target="_blank">Messenger</a></p>
+				</div>
 			</div>
 		</div>
-
-		<footer class="pt-3 text-dark text-center">
+	
+			
+		<footer class="pt-3 text-light text-center" id="footer">
 			<p class="m-0 pb-3">&copy; 2021 Gio Bugtong | All rights reserved.</p>
 
 			<!-- SOCIAL MEDIA LINKS -->
-			<div class="col-md-12 d-flex justify-content-center flex-wrap pb-3">
-				<a href="mailto: nlbugtong@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-2x mx-2"></i></a>
-				<a href="https://www.linkedin.com/in/giobugtong/" target="_blank"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
-				<a href="https://www.facebook.com/giobugtong" target="_blank"><i class="fab fa-facebook-square fa-2x mx-2"></i></a>
-				<a href="https://www.twitter.com/giobugtong" target="_blank"><i class="fab fa-twitter-square fa-2x mx-2"></i></a>
-				<a href="https://m.me/giobugtong" target="_blank"><i class="fab fa-facebook-messenger fa-2x mx-2"></i></a>
-				<a href="https://www.instagram.com/giobugtong" target="_blank"><i class="fab fa-instagram-square fa-2x mx-2"></i></a>
+			<div id="social-media-links" class="col-md-12 d-flex justify-content-center flex-wrap pb-3">
+				<a class="mx-0 mx-sm-1" href="mailto: nlbugtong@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-2x mx-2"></i></a>
+				<a class="mx-0 mx-sm-1" href="https://www.linkedin.com/in/giobugtong/" target="_blank"><i class="fab fa-linkedin fa-2x mx-2"></i></a>
+				<a class="mx-0 mx-sm-1" href="https://www.github.com/giobugtong" target="_blank"><i class="fab fa-github-square fa-2x mx-2"></i></a>
+				<a class="mx-0 mx-sm-1" href="https://www.facebook.com/giobugtong" target="_blank"><i class="fab fa-facebook-square fa-2x mx-2"></i></a>
+				<a class="mx-0 mx-sm-1" href="https://www.twitter.com/giobugtong" target="_blank"><i class="fab fa-twitter-square fa-2x mx-2"></i></a>
+				<a class="mx-0 mx-sm-1" href="https://m.me/giobugtong" target="_blank"><i class="fab fa-facebook-messenger fa-2x mx-2"></i></a>
 			</div>
 		</footer>
 

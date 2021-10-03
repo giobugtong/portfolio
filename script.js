@@ -6,11 +6,11 @@ const setGreeting = () => {
         case 0:
             return "Sunday! The weekend is almost over!"
         case 1:
-            return "Hope you're having a meaningful manic Monday"
+            return "Hope you're having a meaningful manic Monday!"
         case 2:
             return "Tuesday: it's like Monday but better."
         case 3:
-            return "Wednesday is Humpday!"
+            return "Happy Humpday Wednesday!"
         case 4:
             return "Happy Thirst...I mean Thursday"
         case 5:
@@ -20,3 +20,8 @@ const setGreeting = () => {
     }
 }
 greeting.innerHTML = setGreeting();
+
+const contactSubmit = e => {
+    e.preventDefault();
+    console.log("contact form submitted");
+}

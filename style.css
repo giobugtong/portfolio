@@ -1,9 +1,12 @@
+:root {
+	--orange: #FF6A00;
+}
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Helvetica Neue", "Helvetica", sans-serif;
-	color: #fefefe;
 }
 
 a {
@@ -20,6 +23,10 @@ body {
 	transition: 700ms;
 }
 
+p {
+	font-weight: 300;
+}
+
 #hero-container {
 	min-height: 100vh;
 	background-color: #000000;
@@ -28,10 +35,11 @@ body {
 #hero {
 	max-width: 1300px;
 	padding: 0 4rem;
+	margin-bottom: .5rem;
 }
 
 #giobugtong {
-	color: #FF6A00;
+	color: var(--orange);
 }
 
 #at-sign {
@@ -65,10 +73,9 @@ body {
 }
 
 #greeting {
-	position: relative;
-	top: -10vh;
 	display: block;
-	margin: 0 auto;
+	padding-top: 4rem;
+	padding-bottom: clamp(.5rem, 3vw, 3rem);
 	font-style: italic;
 	font-weight: 300;
 	font-size: clamp(.85rem, 2vw, 1.25rem);
@@ -76,10 +83,10 @@ body {
 }
 
 #scroll-down {
-	position: absolute;
-	bottom: 1rem;
-	left: 50%;
-	margin-left: -96px;
+	position: relative;
+	display: block;
+	margin-bottom: 1rem;
+	font-size: clamp(.75rem, 4vw, 1rem);
 }
 
 #scroll-down a {
@@ -111,7 +118,7 @@ h2 {
 }
 
 h3 {
-	font-size: clamp(1.5rem, 4vw, 2.75rem);
+	font-size: clamp(1.25rem, 4vw, 2.75rem);
 }
 
 #navbar {
@@ -193,15 +200,37 @@ h3 {
 }
 
 .btn-custom {
-	background-color: rgb(255, 255, 255) !important;
+	background-color: var(--orange) !important;
+	box-shadow: none !important;
+	font-weight: 300;
 }
 
 .btn-custom:hover {
-	background-color: rgb(151, 70, 243) !important;
+	background-color: hsl(25, 100%, 46%) !important;
+}
+
+form {
+	font-weight: 300;
+}
+
+input, textarea {
+	box-shadow: none !important;
 }
 
 footer {
 	background-color: #000000;
+}
+
+footer p {
+	font-size: .85rem;
+}
+
+#social-media-links a {
+	color: rgb(217, 217, 217);
+}
+
+#social-links a {
+	font-weight: 300;
 }
 
 /* MEDIA QUERIES */

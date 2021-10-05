@@ -56,7 +56,7 @@
 				<h1 id="giobugtong"><span id="at-sign">@</span>giobugtong</h1>
 				<h3 class="font-weight-light">full-stack web developer</h3>
 			</div>
-			<div id="cta" class="container text-center text-md-right align-self-center col-12 ml-auto">
+			<div id="cta" class="container text-center text-md-right align-self-start align-self-md-center col-12 ml-auto">
 				<a class="d-block d-md-inline mr-md-5 mb-3 mb-md-0 text-light" href="#projects">My Projects</a>
 				<a class="d-block d-md-inline mr-md-5 mb-3 mb-md-0 text-light" href="#contact">Contact me</a>
 				<a class="d-block d-md-inline text-light" href="https://drive.google.com/file/d/1RBnZYjAFgr88x404MO8KwB90L_1lqQbH/view?usp=sharing" target="_blank">My résumé</a>
@@ -68,72 +68,110 @@
 			<div class="container">
 				<h2 class="text-center mb-4" id="projects">Projects</h2>
 				<div class="container-fluid my-4">
-	<!-- FIRST ROW -->
-					<div class="row my-4">
-						<div class=" d-flex col-md-6 order-md-1 order-2 flex-column">
-							<h3 class="text-center">Rock Paper Scissors</h3>
-							<p>
-								Play the classic Rock Paper Scissors game with a computer in this simple web app made with HTML, CSS, and a bit of JavaScript.
-							</p>
-							<p>
-								This is a very small practice project I made while going through the Odin Project curriculum.
-							</p>
-							<a href="https://giobugtong.github.io/rock-paper-scissors/" target="_blank"><button class="btn text-light btn-custom btn-block mb-5 mt-md-5">Live Preview</button></a>
+					<!-- ODIN PROJECTS -->
+					<a href="#odin-projects" data-toggle="collapse" class="d-block font-weight-bold text-center text-dark"><h4>Practice projects</h4></a>
+					<div class="collapse" id="odin-projects">
+						<!-- FIRST ROW -->
+						<a href="#rock-paper-scissors" class="d-block text-center text-muted my-4" data-toggle="collapse">Rock Paper Scissors</a>
+						<div id="rock-paper-scissors" class="collapse row my-4">
+							<div class=" d-flex col-md-6 order-md-1 order-2 flex-column">
+								<h3 class="text-center">Rock Paper Scissors</h3>
+								<p>
+									Play the classic Rock Paper Scissors game with a computer in this simple web app made with HTML, CSS, and a bit of JavaScript.
+								</p>
+								<p>
+									This is a very small practice project I made while going through the Odin Project curriculum.
+								</p>
+								<div class="progress my-3">
+									<div class="progress-bar bg-warning text-dark" role="progressbar" style="width: 51%" aria-valuenow="51" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="progress-bar bg-info" role="progressbar" style="width: 27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="progress-bar bg-danger" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div class="d-flex justify-content-around flex-wrap mb-5 languages-text">
+									<div class="mx-2 mb-2"><div class="language-color bg-warning"></div>JavaScript<span class="text-muted ml-2">51%</span></div>
+									<div class="mx-2 mb-2"><div class="language-color bg-info"></div>CSS<span class="text-muted ml-2">27%</span></div>
+									<div class="mx-2 mb-2"><div class="language-color bg-danger"></div>HTML<span class="text-muted ml-2">22%</span></div>
+								</div>
+								<a href="https://giobugtong.github.io/rock-paper-scissors/" target="_blank"><button class="btn text-light btn-custom btn-block mb-5 mt-md-5">Live Preview</button></a>
+							</div>
+							
+							<div class="d-flex col-md-6 bg-light order-md-2 order-1 mb-4 p-0 bg-transparent justify-content-center align-content-center">
+								<a href="https://giobugtong.github.io/rock-paper-scissors/" target="_blank"><img src="./images/rps.png" alt="Screenshot of Rock Paper Scissors" class="img-fluid"></a>
+							</div>
 						</div>
+						
+						<!-- SECOND ROW -->
+						<a href="#etch" class="d-block text-center text-muted my-4" data-toggle="collapse">Etch-A-Sketch</a>
+						<div id="etch" class="collapse row my-4">
+							<div class="col-md-6 order-md-2 order-2 d-flex flex-column">
+								<h3 class="text-center">Etch-A-Sketch</h3>
+								<p>
+									Do you have a mouse, a bit of time to waste, and love colors? Check out this Etch-A-Sketch built using HTML, CSS, and JavaScript.
+								</p>
+								<p>
+									Another simple project I made following the Odin Project course.
+								</p>
+								<div class="progress my-3">
+									<div class="progress-bar bg-warning text-dark" role="progressbar" style="width: 58%" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="progress-bar bg-info" role="progressbar" style="width: 23%" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="progress-bar bg-danger" role="progressbar" style="width: 19%" aria-valuenow="19" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div class="d-flex justify-content-around flex-wrap mb-5 languages-text">
+									<div class="mx-2 mb-2"><div class="language-color bg-warning"></div>JavaScript<span class="text-muted ml-2">58%</span></div>
+									<div class="mx-2 mb-2"><div class="language-color bg-info"></div>CSS<span class="text-muted ml-2">23%</span></div>
+									<div class="mx-2 mb-2"><div class="language-color bg-danger"></div>HTML<span class="text-muted ml-2">19%</span></div>
+								</div>
+								<a href="https://giobugtong.github.io/etch-a-sketch/" target="_blank" class="align-bottom"><button class="btn text-light btn-custom btn-block mb-5 mt-md-5">Live Preview</button></a>
+							</div>
+							
+							<div class=" d-flex col-md-6 bg-light order-md-1 order-1 mb-4 p-0 bg-transparent justify-content-center align-content-center">
+								<a href="https://giobugtong.github.io/etch-a-sketch/" target="_blank"><img src="./images/etch.png" alt="Image of Front-End Web Developer" class="img-fluid"></a>
+							</div>
+						</div>
+						
+						<!-- THIRD ROW -->
+						<a href="#js-calculator" class="d-block text-center text-muted my-4" data-toggle="collapse">JavaScript Calculator</a>
+						<div id="js-calculator" class="collapse row my-4">
+							<div class="col-md-6 order-md-1 order-2 d-flex flex-column">
+								<h3 class="text-center">JavaScript Calculator</h3>
+								<p>
+									This won't solve all your problems but it will do basic arithmetic. A simple Calculator built with JavaScript.
+								</p>
+								<p>
+									Yet another project in the last stretch of the Foundations course in the Odin Project.
+								</p>
+								<div class="progress my-3">
+									<div class="progress-bar bg-warning text-dark" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="progress-bar bg-danger" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="progress-bar bg-info" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div class="d-flex justify-content-around flex-wrap mb-5 languages-text">
+									<div class="mx-2 mb-2"><div class="language-color bg-warning"></div>JavaScript<span class="text-muted ml-2">66%</span></div>
+									<div class="mx-2 mb-2"><div class="language-color bg-danger"></div>HTML<span class="text-muted ml-2">17%</span></div>
+									<div class="mx-2 mb-2"><div class="language-color bg-info"></div>CSS<span class="text-muted ml-2">17%</span></div>
+								</div>
 
-						<div class="d-flex col-md-6 bg-light order-md-2 order-1 mb-4 p-0 bg-transparent justify-content-center align-content-center">
-							<a href="https://giobugtong.github.io/rock-paper-scissors/" target="_blank"><img src="./images/rps.png" alt="Screenshot of Rock Paper Scissors" class="img-fluid"></a>
+								<a href="https://giobugtong.github.io/JavaScript-Calculator/" target="_blank"><button class="btn text-light btn-custom btn-block mb-5 mt-md-5">Live Preview</button></a>
+							</div>
+							
+							<div class="d-flex col-md-6 bg-light order-md-2 order-1 mb-4 p-0 bg-transparent justify-content-center align-content-center">
+								<a href="https://giobugtong.github.io/JavaScript-Calculator/" target="_blank"><img src="./images/jscalc.png" alt="Image of Front-End Web Developer" class="img-fluid"></a>
+							</div>
 						</div>
 					</div>
-
-	<!-- SECOND ROW -->
-					<div class="row my-4">
-						<div class="col-md-6 order-md-2 order-2 d-flex flex-column">
-							<h3 class="text-center">Etch-A-Sketch</h3>
-							<p>
-								Do you have a mouse, a bit of time to waste, and love colors? Check out this Etch-A-Sketch built using HTML, CSS, and JavaScript.
-							</p>
-							<p>
-								Another simple project I made following the Odin Project course.
-							</p>
-							<a href="https://giobugtong.github.io/etch-a-sketch/" target="_blank" class="align-bottom"><button class="btn text-light btn-custom btn-block mb-5 mt-md-5">Live Preview</button></a>
-						</div>
-
-						<div class=" d-flex col-md-6 bg-light order-md-1 order-1 mb-4 p-0 bg-transparent justify-content-center align-content-center">
-							<a href="https://giobugtong.github.io/etch-a-sketch/" target="_blank"><img src="./images/etch.png" alt="Image of Front-End Web Developer" class="img-fluid"></a>
-						</div>
-					</div>
-
-	<!-- THIRD ROW -->
-					<div class="row my-4">
-						<div class="col-md-6 order-md-1 order-2 d-flex flex-column">
-							<h3 class="text-center">JavaScript Calculator</h3>
-							<p>
-								This won't solve all your problems but it will do basic arithmetic. A simple Calculator built with JavaScript.
-							</p>
-							<p>
-								Yet another project in the last stretch of the Foundations course in the Odin Project.
-							</p>
-							<a href="https://giobugtong.github.io/JavaScript-Calculator/" target="_blank"><button class="btn text-light btn-custom btn-block mb-5 mt-md-5">Live Preview</button></a>
-						</div>
-
-						<div class="d-flex col-md-6 bg-light order-md-2 order-1 mb-4 p-0 bg-transparent justify-content-center align-content-center">
-							<a href="https://giobugtong.github.io/JavaScript-Calculator/" target="_blank"><img src="./images/jscalc.png" alt="Image of Front-End Web Developer" class="img-fluid"></a>
-						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	<!-- TOOLS SECTION -->
-		<div class="container-fluid text-light" id="tools-container">
-			<h2 class="mb-4 text-center" id="tools">Tools</h2>
-			<div class="d-flex flex-wrap justify-content-center" id="logos-container">
-				<a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><img src="./images/logo-html5.png"></a>
-				<a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><img src="./images/logo-css3.png"></a>
-				<a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="./images/logo-javascript.png"></a>
-				<a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank"><img src="./images/logo-bootstrap.png"></a>
-				<a href="https://en.wikipedia.org/wiki/Visual_Studio_Code" target="_blank"><img src="./images/logo-vscode.png" id="vscode-logo" class="align-self-center m-2"></a>
-				<a href="https://en.wikipedia.org/wiki/Sublime_Text" target="_blank"><img src="./images/logo-sublime-text-3.png"></a>
+			<!-- TOOLS SECTION -->
+			<div class="container-fluid text-light" id="tools-container">
+				<h2 class="mb-4 text-center" id="tools">Tools</h2>
+				<div class="d-flex flex-wrap justify-content-center" id="logos-container">
+					<a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><img src="./images/logo-html5.png"></a>
+					<a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><img src="./images/logo-css3.png"></a>
+					<a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="./images/logo-javascript.png"></a>
+					<a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank"><img src="./images/logo-bootstrap.png"></a>
+					<a href="https://en.wikipedia.org/wiki/Visual_Studio_Code" target="_blank"><img src="./images/logo-vscode.png" id="vscode-logo" class="align-self-center m-2"></a>
+					<a href="https://en.wikipedia.org/wiki/Sublime_Text" target="_blank"><img src="./images/logo-sublime-text-3.png"></a>
 				<a href="https://en.wikipedia.org/wiki/Git" target="_blank"><img src="./images/logo-git.png"></a>
 				<a href="https://en.wikipedia.org/wiki/GitHub" target="_blank"><img src="./images/logo-github.png" id="github-logo" class="align-self-center m-2"></a>
 				<a href="https://en.wikipedia.org/wiki/GitLab" target="_blank"><img src="./images/logo-gitlab-ci-cd.png"></a>
@@ -144,11 +182,9 @@
 		<div class="container mb-4 mb-md-5" id="contact-container">
 			<h2 class="mb-3 mb-md-5 text-center" id="contact">Contact</h2>
 			<div class="row">
-				<p class="mx-3 mb-3 mb-md-4">If you think I can be a good fit for your team, leave your name and email address by filling up the form below, or contact me through my social links.</p>
-
-				
 				<!-- CONTACT FORM -->
 				<div class="col-md-6">
+					<p class="mb-3 mb-md-4">If you think I can be a good fit for your team, leave your name and email address by filling up the form below, or contact me through my social links.</p>
 					<form action="https://formspree.io/f/xleaaqpe"
 					method="POST"
 					>
@@ -171,7 +207,7 @@
 				<div id="social-links" class="col-md-6 mt-5 mt-md-2 text-center text-md-right">
 					<p class="font-weight-normal">Email</p>
 					<p><a class="text-muted" href="mailto: nlbugtong@gmail.com" target="_blank">nlbugtong@gmail.com</a></p>
-					<p class="font-weight-normal">Social Links</p>
+					<p class="font-weight-normal mt-5">Social Links</p>
 					<p><a class="text-muted" href="https://www.linkedin.com/in/giobugtong/" target="_blank">LinkedIn</a></p>
 					<p><a class="text-muted" href="https://www.github.com/giobugtong" target="_blank">GitHub</a></p>
 					<p><a class="text-muted" href="https://www.facebook.com/giobugtong" target="_blank">Facebook</a></p>

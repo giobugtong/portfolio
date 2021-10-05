@@ -126,6 +126,10 @@ h3 {
 	font-size: clamp(1.25rem, 4vw, 2.75rem);
 }
 
+h4 {
+	font-size: clamp(1.125rem, 4vw, 1.625em);
+}
+
 #navbar {
 	font-weight: 300;
 }
@@ -168,12 +172,12 @@ h3 {
 	padding-top: 72px;
 }
 
-#projects-container, #tools-container {
-	/* min-height: 50vh; */
-}
-
 #contact-container {
 	min-height: 80vh;
+}
+
+#projects-container {
+	min-height: 100vh;
 }
 
 #tools-container {
@@ -199,6 +203,21 @@ h3 {
 
 .projects {
 	height: 100%;
+}
+
+.languages-text {
+	font-size: .75rem;
+
+}
+
+.language-color {
+	height: .75rem;
+	width: .75rem;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: .425rem;
+	position: relative;
+	top: .125rem;
 }
 
 #tools-container > div > a > img:hover {

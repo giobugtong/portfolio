@@ -2,26 +2,34 @@ const greeting = document.getElementById("greeting");
 
 const setGreeting = () => {
     const date = new Date();
-    const dayMonth = `${date.getDate()}/${date.getMonth()}`;
+    const dayMonth = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
     const holidayGreeting = [
-        { date: "1/10", greeting: "Happy All Saint's Day!" },
-        { date: "30/10", greeting: "Happy Bonifacio Day!" },
-        { date: "25/11", greeting: "Happy Holidays!" },
-        { date: "30/11", greeting: "Happy Rizal Day!" },
-        { date: "1/0", greeting: "Happy New Year!" },
-        { date: "1/1", greeting: "Happy Chinese New Year!" },
-        { date: "25/1", greeting: "Happy People Power Anniversary!" },
-        { date: "17/3", greeting: "Happy Easter!" },
-        { date: "9/3", greeting: "Happy Day of Valor!" },
-        { date: "1/4", greeting: "Happy Labor Day!" },
-        { date: "12/5", greeting: "Happy Independence Day!" },
+        { date: "1/10/2021", greeting: "Happy All Saint's Day!" },
+        { date: "30/10/2021", greeting: "Happy Bonifacio Day!" },
+        { date: "25/11/2021", greeting: "Happy Holidays!" },
+        { date: "30/11/2021", greeting: "Happy Rizal Day!" },
+        { date: "1/0/2022", greeting: "Happy New Year!" },
+        { date: "1/1/2022", greeting: "Happy Chinese New Year!" },
+        { date: "25/1/2022", greeting: "Happy People Power Anniversary!" },
+        { date: "17/3/2022", greeting: "Happy Easter!" },
+        { date: "9/3/2022", greeting: "Happy Day of Valor!" },
+        { date: "1/4/2022", greeting: "Happy Labor Day!" },
+        { date: "12/5/2022", greeting: "Happy Independence Day!" },
+        { date: "21/7/2022", greeting: "Happy Ninoy Aquino Day!" },
+        { date: "29/5/2022", greeting: "Happy National Heroes Day!" },
+        { date: "30/10/2022", greeting: "Happy Bonifacio Day!" },
+        { date: "25/11/2022", greeting: "Happy Holidays!" },
+        { date: "30/11/2022", greeting: "Happy Rizal Day!" }
     ]
     const isHoliday = day => {
+        let greetingContent = null;
         for(let i = 0; i < holidayGreeting.length; i++) {
             if (day === holidayGreeting[i].date) {
-                return holidayGreeting.greeting;
-            } else return false
+                greetingContent = holidayGreeting[i].greeting;
+                break
+            } else continue
         }
+        return greetingContent;
     }
 
     if (isHoliday(dayMonth)) {

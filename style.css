@@ -2,6 +2,31 @@
 	--orange: #FF6A00;
 }
 
+::-webkit-scrollbar {
+	width: 1.125rem;
+}
+
+::-webkit-scrollbar-track {
+	background: rgb(48, 48, 50);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--orange);
+	border-radius: 100vw;
+	border: 4px solid rgb(48, 48, 50);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: hsl(25, 100%, 45%);
+}
+
+@supports (scrollbar-color: red blue) {
+	* {
+		scrollbar-color: var(--orange) rgb(48, 48, 50);
+		scrollbar-width: auto;
+	}
+}
+
 * {
 	padding: 0;
 	margin: 0;

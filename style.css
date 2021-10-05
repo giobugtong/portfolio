@@ -38,8 +38,14 @@ p {
 	margin-bottom: .5rem;
 }
 
+#cta {
+	max-width: 1300px;
+	padding: 0 4.5rem;
+}
+
 #giobugtong {
 	color: var(--orange);
+	margin-block: 1rem;
 }
 
 #at-sign {
@@ -48,7 +54,6 @@ p {
 	position: relative;
 	top: clamp(6px, 1vw, 16px);
 	right: clamp(2px, 1vw, 8px);
-	/* background: linear-gradient(to bottom, rgb(28, 39, 253), rgba(91, 248, 43, 0.916)); */
 	background: linear-gradient(to bottom, rgb(28, 253, 171), rgba(224, 43, 248, 0.916));
 	-webkit-background-clip: text;
  	-webkit-text-fill-color: transparent;
@@ -59,7 +64,7 @@ p {
 	display: block;
 	margin: 0 auto;
 	color: white;
-	font-size: clamp(1.25rem, 4vw, 2rem);
+	font-size: clamp(1rem, 5vw, 2rem);
 	font-weight: 300;
 }
 
@@ -68,14 +73,14 @@ p {
 	display: block;
 	margin: 0 auto;
 	color: white;
-	font-size: clamp(1.25rem, 4vw, 2rem);
+	font-size: clamp(1rem, 5vw, 2rem);
 	font-weight: 300;
 }
 
 #greeting {
 	display: block;
 	padding-top: 4rem;
-	padding-bottom: clamp(.5rem, 3vw, 3rem);
+	padding-bottom: clamp(1rem, 3vw, 3.5rem);
 	font-style: italic;
 	font-weight: 300;
 	font-size: clamp(.85rem, 2vw, 1.25rem);
@@ -122,9 +127,20 @@ h3 {
 }
 
 #navbar {
-	background-color: rgba(0, 0, 0, .7);
-	backdrop-filter: blur(15px);
 	font-weight: 300;
+}
+
+@supports (backdrop-filter: none) {
+	#navbar {
+		background-color: rgba(0, 0, 0, .7);
+		backdrop-filter: blur(1rem);
+	}
+}
+
+@supports not (backdrop-filter: none) {
+	#navbar {
+		background-color: rgba(0, 0, 0, 1);
+	}
 }
 
 #navbar button {

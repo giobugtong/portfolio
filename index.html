@@ -21,49 +21,45 @@
 	<body>
 
 	<!-- NAV BAR -->
-		<nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navbar">
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
 			<!-- <a class="navbar-brand" href="#"><img src="./images/gioBugtong.png" id="nav-logo"></a> -->
 			<!-- <a class="navbar-brand" href="#">gio<span class="font-weight-bolder">Bugtong</span></a> -->
-			<a class="navbar-brand" href="#">@giobugtong</a>
+			<a class="navbar-brand font-weight-bold" href="#">@giobugtong</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse text-right pr-3 pr-sm-0 mt-3 mt-sm-0" id="navLinks">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item mr-0 mr-sm-3 mr-md-4" data-toggle="collapse" data-target=".navbar-collapse.show">
 						<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
 					</li>
-					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+					<li class="nav-item mr-0 mr-sm-3 mr-md-4" data-toggle="collapse" data-target=".navbar-collapse.show">
 						<a class="nav-link" href="#projects">Projects</a>
 					</li>
-					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+					<li class="nav-item mr-0 mr-sm-3 mr-md-4" data-toggle="collapse" data-target=".navbar-collapse.show">
 						<a class="nav-link" href="#tools">Tools</a>
 					</li>
-					
-				</ul>
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+					<li class="nav-item mr-0 mr-sm-3 mr-md-4" data-toggle="collapse" data-target=".navbar-collapse.show">
 						<a class="nav-link" href="#contact">Contact</a>
 					</li>
-					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+					<li class="nav-item mr-0 mr-sm-3 mr-md-0" data-toggle="collapse" data-target=".navbar-collapse.show">
 						<a class="nav-link" href="https://drive.google.com/file/d/1RBnZYjAFgr88x404MO8KwB90L_1lqQbH/view?usp=sharing" target="_blank" >Résumé</a>
 					</li>
-				</ul>
 			</div>
 		</nav>
 
 	<!-- HERO -->
 
 		<div id="hero-container" class="container-fluid mx-0 row font-weight-light text-light">
-			<div id="hero" class="container text-center text-md-right col-12 align-self-end">
+			<div id="hero" class="container text-center text-md-right col-12 align-self-center">
 				<p id="greeting"></p>
 				<h1 id="giobugtong"><span id="at-sign">@</span>giobugtong</h1>
 				<h3 class="font-weight-light">full-stack web developer</h3>
 			</div>
-			<div id="scroll-down" class="text-center align-self-end col-12"><a href="#projects">
-				<div id="scroll-icon"><i class="fas fa-angle-double-down"></i></div>
-				scroll down to see my projects
-			</a>
+			<div id="cta" class="container text-center text-md-right align-self-center col-12 ml-auto">
+				<a class="d-block d-md-inline mr-md-5 mb-3 mb-md-0 text-light" href="#projects">My Projects</a>
+				<a class="d-block d-md-inline mr-md-5 mb-3 mb-md-0 text-light" href="#contact">Contact me</a>
+				<a class="d-block d-md-inline text-light" href="https://drive.google.com/file/d/1RBnZYjAFgr88x404MO8KwB90L_1lqQbH/view?usp=sharing" target="_blank">My résumé</a>
 			</div>
 		</div>
 
@@ -153,30 +149,34 @@
 				
 				<!-- CONTACT FORM -->
 				<div class="col-md-6">
-					<form onsubmit="return contactSubmit()">
+					<form action="https://formspree.io/f/xleaaqpe"
+					method="POST"
+					>
 						<div class="form-group">
 							<label for="full-name" class="text-left">Full Name</label>
 							<input type="text" name="fullName" id="full-name" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label for="email" class="text-left">Email Address</label>
-							<input type="email" name="e-mail" id="email" class="form-control" required>
+							<input type="email" name="_replyto" id="email" class="form-control" required>
 						</div>
 						<div class="form-group" class="text-left">
 							<label for="text-area">Message</label>
-							<textarea rows="3" class="form-control" name="textArea" id="text-area"></textarea>
+							<textarea rows="3" class="form-control" name="message" id="text-area" required></textarea>
 						</div>
 						<button class="btn btn-block text-light btn-custom" type="submit" id="btn-send">Send</button>
 					</form>
 				</div>
 
-				<div id="social-links" class="col-md-6 mt-5 text-center">
-					<p><a href="mailto: nlbugtong@gmail.com" target="_blank">Email</a></p>
-					<p><a href="https://www.linkedin.com/in/giobugtong/" target="_blank">LinkedIn</a></p>
-					<p><a href="https://www.github.com/giobugtong" target="_blank">GitHub</a></p>
-					<p><a href="https://www.facebook.com/giobugtong" target="_blank">Facebook</a></p>
-					<p><a href="https://www.twitter.com/giobugtong" target="_blank">Twitter</a></p>
-					<p><a href="https://m.me/giobugtong" target="_blank">Messenger</a></p>
+				<div id="social-links" class="col-md-6 mt-5 mt-md-2 text-center text-md-right">
+					<p class="font-weight-normal">Email</p>
+					<p><a class="text-muted" href="mailto: nlbugtong@gmail.com" target="_blank">nlbugtong@gmail.com</a></p>
+					<p class="font-weight-normal">Social Links</p>
+					<p><a class="text-muted" href="https://www.linkedin.com/in/giobugtong/" target="_blank">LinkedIn</a></p>
+					<p><a class="text-muted" href="https://www.github.com/giobugtong" target="_blank">GitHub</a></p>
+					<p><a class="text-muted" href="https://www.facebook.com/giobugtong" target="_blank">Facebook</a></p>
+					<p><a class="text-muted" href="https://www.twitter.com/giobugtong" target="_blank">Twitter</a></p>
+					<p><a class="text-muted" href="https://m.me/giobugtong" target="_blank">Messenger</a></p>
 				</div>
 			</div>
 		</div>

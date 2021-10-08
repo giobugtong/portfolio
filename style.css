@@ -148,7 +148,7 @@ h2 {
 }
 
 h3 {
-	font-size: clamp(1.25rem, 4vw, 2.75rem);
+	font-size: clamp(1.5rem, 6vw, 2.75rem);
 }
 
 h4 {
@@ -207,10 +207,10 @@ h4 {
 
 #tools-container {
 	min-height: 100vh;
-	background-color: #000000;
+	background-color: #e0e0e0;
 }
 
-#logos-container > a > img {
+.logos-container > a > img {
 	width: 130px;
 }
 #github-logo, #vscode-logo {
@@ -315,7 +315,7 @@ footer p {
 
 @media only screen and (max-width: 366px) {
 
-	#logos-container > a > img {
+	.logos-container > a > img {
 		width: 80px;
 	}
 	#github-logo, #vscode-logo {
